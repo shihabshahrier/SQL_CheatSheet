@@ -1,6 +1,6 @@
 # SQL Cheat Sheet
 
-## \ud83d\udccc Table of Contents
+## 📌 Table of Contents
 - [Introduction](#introduction)
 - [Database Basics](#database-basics)
 - [Data Types](#data-types)
@@ -228,5 +228,5 @@ SELECT * FROM users WHERE email REGEXP 'gmail\.com$';  -- Emails ending in gmail
 ```
 
 ---
-## \ud83d\udccc Conclusion
+## 📌 Conclusion
 This SQL Cheat Sheet covers basic to advanced concepts. Use it as a quick reference guide for writing efficient SQL queries. \ud83d\ude80
