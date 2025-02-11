@@ -1,6 +1,6 @@
 # SQL Cheat Sheet
 
-## 📌 Table of Contents
+## \ud83d\udccc Table of Contents
 - [Introduction](#introduction)
 - [Database Basics](#database-basics)
 - [Data Types](#data-types)
@@ -18,6 +18,7 @@
 - [Window Functions](#window-functions)
 - [Common Table Expressions (CTE)](#common-table-expressions-cte)
 - [Performance Optimization](#performance-optimization)
+- [LIKE and Regex Search](#like-and-regex-search)
 
 ---
 ## Introduction
@@ -214,5 +215,18 @@ EXPLAIN SELECT * FROM users WHERE email = 'test@example.com';
 ```
 
 ---
-## 📌 Conclusion
-This SQL Cheat Sheet covers basic to advanced concepts. Use it as a quick reference guide for writing efficient SQL queries. 🚀
+## LIKE and Regex Search
+```sql
+-- Using LIKE for pattern matching
+SELECT * FROM users WHERE name LIKE 'A%';  -- Names starting with 'A'
+SELECT * FROM users WHERE email LIKE '%@gmail.com';  -- Emails ending in gmail.com
+SELECT * FROM users WHERE name LIKE '_a%';  -- Names where second letter is 'a'
+
+-- Searching with regex (MySQL example)
+SELECT * FROM users WHERE name REGEXP '^A.*';  -- Names starting with 'A'
+SELECT * FROM users WHERE email REGEXP 'gmail\.com$';  -- Emails ending in gmail.com
+```
+
+---
+## \ud83d\udccc Conclusion
+This SQL Cheat Sheet covers basic to advanced concepts. Use it as a quick reference guide for writing efficient SQL queries. \ud83d\ude80
